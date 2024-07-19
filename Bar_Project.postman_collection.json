@@ -1,0 +1,592 @@
+{
+	"info": {
+		"_postman_id": "e96acf83-80b0-468f-b13c-1ff48b86e40c",
+		"name": "Bar_Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24540408"
+	},
+	"item": [
+		{
+			"name": "Liste des boissons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"nom\": \"Nom\",\r\n    \"prix\": 0,\r\n    \"media\": \"api/medias/1\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}boissons",
+					"host": [
+						"{{BASE}}boissons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ajout boisson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nom\": \"Nom\",\r\n  \"prix\": 0,\r\n  \"media\": \"api/medias/1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}boissons",
+					"host": [
+						"{{BASE}}boissons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get boisson by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nom\": \"Nom\",\r\n  \"prix\": 0,\r\n  \"media\": \"api/medias/1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}boissons/{id}",
+					"host": [
+						"{{BASE}}boissons"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put boisson by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nom\": \"Nom\",\r\n  \"prix\": 0,\r\n  \"media\": \"api/medias/1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}boissons/{id}",
+					"host": [
+						"{{BASE}}boissons"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch boisson by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nom\": \"Nom\",\r\n  \"prix\": 0,\r\n  \"media\": \"api/medias/1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}boissons/{id}",
+					"host": [
+						"{{BASE}}boissons"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete boisson by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}boissons/{id}",
+					"host": [
+						"{{BASE}}boissons"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liste des commandes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dateCreation\": \"2024-07-19T15:44:49.915Z\",\r\n  \"boisson\": [\r\n    \"api/boissons/1\"\r\n  ],\r\n  \"numeroTable\": 1,\r\n  \"serveur\": [\r\n    \"api/users/1\"\r\n  ],\r\n  \"barman\": [\r\n    \"api/users/2\"\r\n  ],\r\n  \"statusCommande\": \"En cours de préparation\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}commandes",
+					"host": [
+						"{{BASE}}commandes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ajout commande",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dateCreation\": \"2024-07-19T15:44:49.915Z\",\r\n  \"boisson\": [\r\n    \"api/boissons/1\"\r\n  ],\r\n  \"numeroTable\": 1,\r\n  \"serveur\": [\r\n    \"api/users/1\"\r\n  ],\r\n  \"barman\": [\r\n    \"api/users/2\"\r\n  ],\r\n  \"statusCommande\": \"En cours de préparation\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}commandes",
+					"host": [
+						"{{BASE}}commandes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put commande by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dateCreation\": \"2024-07-19T15:44:49.915Z\",\r\n  \"boisson\": [\r\n    \"api/boissons/1\"\r\n  ],\r\n  \"numeroTable\": 1,\r\n  \"serveur\": [\r\n    \"api/users/1\"\r\n  ],\r\n  \"barman\": [\r\n    \"api/users/2\"\r\n  ],\r\n  \"statusCommande\": \"En cours de préparation\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}commande/{id}",
+					"host": [
+						"{{BASE}}commande"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete commande by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dateCreation\": \"2024-07-19T15:44:49.915Z\",\r\n  \"boisson\": [\r\n    \"api/boissons/1\"\r\n  ],\r\n  \"numeroTable\": 1,\r\n  \"serveur\": [\r\n    \"api/users/1\"\r\n  ],\r\n  \"barman\": [\r\n    \"api/users/2\"\r\n  ],\r\n  \"statusCommande\": \"En cours de préparation\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}commande/{id}",
+					"host": [
+						"{{BASE}}commande"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch commande by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dateCreation\": \"2024-07-19T15:44:49.915Z\",\r\n  \"boisson\": [\r\n    \"api/boissons/1\"\r\n  ],\r\n  \"numeroTable\": 1,\r\n  \"serveur\": [\r\n    \"api/users/1\"\r\n  ],\r\n  \"barman\": [\r\n    \"api/users/2\"\r\n  ],\r\n  \"statusCommande\": \"En cours de préparation\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}commande/{id}",
+					"host": [
+						"{{BASE}}commande"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get commande by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dateCreation\": \"2024-07-19T15:44:49.915Z\",\r\n  \"boisson\": [\r\n    \"api/boissons/1\"\r\n  ],\r\n  \"numeroTable\": 1,\r\n  \"serveur\": [\r\n    \"api/users/1\"\r\n  ],\r\n  \"barman\": [\r\n    \"api/users/2\"\r\n  ],\r\n  \"statusCommande\": \"En cours de préparation\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}commande/{id}",
+					"host": [
+						"{{BASE}}commande"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liste des media",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"boisson\": \"api/boissons/1\",\r\n  \"path\": \"path\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}media",
+					"host": [
+						"{{BASE}}media"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ajout media",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"boisson\": \"api/boissons/1\",\r\n  \"path\": \"path\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}media",
+					"host": [
+						"{{BASE}}media"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put media by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"boisson\": \"api/boissons/1\",\r\n  \"path\": \"path\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}media/{id}",
+					"host": [
+						"{{BASE}}media"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get media by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}media/{id}",
+					"host": [
+						"{{BASE}}media"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete media by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}media/{id}",
+					"host": [
+						"{{BASE}}media"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch media by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}media/{id}",
+					"host": [
+						"{{BASE}}media"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liste des users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"commandes\": [\r\n    \"api/commandes/1\"\r\n  ],\r\n  \"identifiant\": \"identifiant\",\r\n  \"password\": \"mot de passe\",\r\n  \"role\": \"role\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}users",
+					"host": [
+						"{{BASE}}users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ajout user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"commandes\": [\r\n    \"api/commandes/1\"\r\n  ],\r\n  \"identifiant\": \"identifiant\",\r\n  \"password\": \"mot de passe\",\r\n  \"role\": \"role\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}users",
+					"host": [
+						"{{BASE}}users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"commandes\": [\r\n    \"api/commandes/1\"\r\n  ],\r\n  \"identifiant\": \"identifiant\",\r\n  \"password\": \"mot de passe\",\r\n  \"role\": \"role\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}users/{id}",
+					"host": [
+						"{{BASE}}users"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put user by id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"commandes\": [\r\n    \"api/commandes/1\"\r\n  ],\r\n  \"identifiant\": \"identifiant\",\r\n  \"password\": \"mot de passe\",\r\n  \"role\": \"role\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}users/{id}",
+					"host": [
+						"{{BASE}}users"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{BASE}}users/{id}",
+					"host": [
+						"{{BASE}}users"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch user by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"commandes\": [\r\n    \"api/commandes/1\"\r\n  ],\r\n  \"identifiant\": \"identifiant\",\r\n  \"password\": \"mot de passe\",\r\n  \"role\": \"role\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BASE}}users/{id}",
+					"host": [
+						"{{BASE}}users"
+					],
+					"path": [
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE",
+			"value": "http://127.0.0.1:8000/api/"
+		}
+	]
+}

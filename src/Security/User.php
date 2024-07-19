@@ -5,6 +5,7 @@ namespace App\Security;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
+#[ApiResource()]
 class User implements UserInterface, PasswordAuthenticatedUserInterface
 {
     private $username;
